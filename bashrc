@@ -44,6 +44,7 @@ alias du='du -c -h'
 alias mkdr='mkdir -p -v'
 alias unboot='shutdown -h now'
 alias untmux='tmux kill-session'
+alias vim='nvim'
 
 # safety
 alias cp='cp -i'

@@ -1,0 +1,8 @@
+Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
+Plug 'endel/vim-github-colorscheme'
+Plug 'jnurmine/Zenburn'
+Plug 'rakr/vim-one'
+Plug 'freeo/vim-kalisi'
+Plug 'tomasr/molokai'
+Plug 'fmoralesc/molokayo'

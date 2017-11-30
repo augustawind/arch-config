@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.gitconfig:
+    ~/.spectrwm.conf:
+    ~/.tern-config:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.xbindkeysrc:
+    ~/.Xdefaults:
+    ~/.xinitrc:
+    ~/.Xmodmap:
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

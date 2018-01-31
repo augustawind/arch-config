@@ -67,7 +67,7 @@ fi
 alias gs='git status'
 alias gl='git log --decorate --graph'
 alias ga='git add'
-alias gc='git commit -m'
+alias gc='git commit'
 alias gca='git commit -am'
 alias gp='git push'
 alias gitflow='git commit -a && git push'

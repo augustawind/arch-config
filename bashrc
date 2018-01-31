@@ -65,8 +65,10 @@ fi
 
 # git
 alias gs='git status'
+alias gd='git diff'
 alias gl='git log --decorate --graph'
 alias ga='git add'
+alias gap='git add -p'
 alias gc='git commit'
 alias gca='git commit -am'
 alias gp='git push'

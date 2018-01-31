@@ -4,4 +4,8 @@
 [github]
 	user = dustinrohde
 [hub]
-    protocol = https
+	protocol = ssh
+[core]
+	editor = nvim
+[credential]
+	helper = cache --timeout=3600

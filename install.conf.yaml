@@ -6,25 +6,30 @@
 - clean: ['~', '~/.vim', '~/.vim/*']
 
 - link:
+    # bash
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
 
+    # xorg
     ~/.xinitrc:
     ~/.Xdefaults:
     ~/.Xmodmap:
     ~/.xbindkeysrc:
 
-    ~/.spectrwm.conf:
-    ~/.gitconfig: gitconfig
-    ~/.tern-config: tern-config
-
-    # Vim
+    # vim
     ~/.vim/ftplugin: vim/ftplugin/
     ~/.vim/snippets: vim/snippets/
     ~/.vim/syntax: vim/syntax/
     ~/.vim/vimrc.d: vim/vimrc.d/
     ~/.vimrc: vim/vimrc
     ~/.config/nvim/init.vim: vim/init.vim
+
+    # misc
+    ~/.spectrwm.conf:
+    ~/.gitconfig: gitconfig
+    ~/.tern-config: tern-config
+    ~/.config/terminator: terminator
+    ~/.config/hub: hub
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

@@ -7,6 +7,11 @@ if has('nvim')
 endif
 
 " ------------------------------------------------
+" git
+
+Plug 'tpope/vim-git'
+
+" ------------------------------------------------
 " go
 
 Plug 'zchee/deoplete-go'
@@ -18,7 +23,6 @@ Plug 'fatih/vim-go'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'godlygeek/tabular'
 Plug 'eagletmt/neco-ghc'
-Plug 'eagletmt/ghcmod-vim'
 
 " ------------------------------------------------
 " javascript
@@ -44,6 +48,11 @@ Plug 'zchee/deoplete-jedi'
 " python
 
 Plug 'alexgenco/neovim-ruby'
+
+" ------------------------------------------------
+" ruby
+
+Plug 'fishbullet/deoplete-ruby'
 
 " ------------------------------------------------
 " rust

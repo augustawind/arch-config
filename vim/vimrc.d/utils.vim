@@ -7,7 +7,7 @@ let g:session_autosave = 'yes'
 Plug 'tpope/vim-obsession'
 
 " file explorer
-Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
 
 " fuzzy find-anywhere
 Plug 'kien/ctrlp.vim'
@@ -20,3 +20,13 @@ Plug 'ap/vim-buftabline'
 " dash app support
 Plug 'rizzatti/dash.vim'
 nmap <Leader>D :Dash<CR>
+
+" colorscheme switcher
+Plug 'xolox/vim-colorscheme-switcher'
+let g:colorscheme_switcher_keep_background = 0
+let g:colorscheme_switcher_exclude_builtins = 1
+let g:colorscheme_switcher_define_mappings = 0
+
+" git integration
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'

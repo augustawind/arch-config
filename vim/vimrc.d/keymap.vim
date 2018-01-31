@@ -5,7 +5,10 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
 " reload .vimrc
-nnoremap sv :source $MYVIMRC<CR>
+map <leader>s :source $MYVIMRC<CR>
+
+" edit vimrc.d/
+map <leader>e :e ~/.vim/vimrc.d/<CR>
 
 " fold/unfold with space
 nnoremap <space> za
@@ -13,10 +16,12 @@ nnoremap <space> za
 " navigate/close quickfix
 map <leader>n :cnext<CR>
 map <leader>m :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
+map <leader>a :cclose<CR>
 
 " chdir to current file
-nnoremap <leader>c :lcd %:p:h<CR>
+map <leader>. :lcd %:p:h<CR>
+" chdir to parent directory
+map <leader>_ :lcd ..<CR>
 
 " navigate buffers easily
 nnoremap <C-N> :bnext<CR>
@@ -25,3 +30,21 @@ nnoremap <C-X> :bdelete<CR>
 
 " make ZZ shortcut use :xa instead of :wq
 nnoremap ZZ :xa<CR>
+
+" run linter autofix utility (plugin: 'w0rp/ale')
+map <leader>f :ALEFix<CR>
+
+" cycle thru installed colorschemes (plugin: 'xolox/vim-colorscheme-switcher')
+map <leader>( :PrevColorScheme<CR>
+map <leader>) :NextColorScheme<CR>
+
+" cycle thru light/dark background
+map <leader>b :call BackgroundToggle()<CR>
+
+function! BackgroundToggle()
+    if &background == "light"
+        execute "set background=dark"
+    else
+        execute "set background=light"
+    endif
+endfunction
